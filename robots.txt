@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://yifeiacc.github.io/lab/sitemap.xml
+Sitemap: https://yifeiacc.github.io/Lab/sitemap.xml
