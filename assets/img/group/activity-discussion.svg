@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Research discussion placeholder</title>
+  <desc id="desc">A stylized research discussion placeholder for the group activity gallery.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff7e9" />
+      <stop offset="1" stop-color="#eaf6f2" />
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)" />
+  <rect x="90" y="98" width="780" height="292" rx="24" fill="#ffffff" />
+  <path d="M218 176h290a42 42 0 0 1 42 42v6a42 42 0 0 1-42 42H338l-80 70v-70h-40a42 42 0 0 1-42-42v-6a42 42 0 0 1 42-42Z" fill="#005fb8" />
+  <path d="M468 246h232a42 42 0 0 1 42 42v6a42 42 0 0 1-42 42h-28v62l-72-62H468a42 42 0 0 1-42-42v-6a42 42 0 0 1 42-42Z" fill="#2a9d8f" />
+  <rect x="236" y="211" width="230" height="13" rx="7" fill="#ffffff" opacity=".9" />
+  <rect x="236" y="238" width="166" height="13" rx="7" fill="#ffffff" opacity=".62" />
+  <rect x="480" y="282" width="174" height="13" rx="7" fill="#ffffff" opacity=".88" />
+  <rect x="480" y="309" width="112" height="13" rx="7" fill="#ffffff" opacity=".58" />
+  <circle cx="232" cy="420" r="34" fill="#15324f" />
+  <circle cx="326" cy="420" r="34" fill="#eb7f3c" />
+  <circle cx="420" cy="420" r="34" fill="#2a9d8f" />
+  <circle cx="514" cy="420" r="34" fill="#005fb8" />
+  <text x="90" y="488" fill="#15324f" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">Research Discussion</text>
+</svg>

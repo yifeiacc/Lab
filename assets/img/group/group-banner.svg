@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520" viewBox="0 0 1600 520" role="img" aria-labelledby="title desc">
+  <title id="title">Trustworthy machine learning banner</title>
+  <desc id="desc">An abstract research banner with layered networks and soft blue-green light.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a2540" />
+      <stop offset="0.48" stop-color="#165a72" />
+      <stop offset="1" stop-color="#17735f" />
+    </linearGradient>
+    <radialGradient id="glow" cx="72%" cy="42%" r="58%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.42" />
+      <stop offset="0.48" stop-color="#54d6c6" stop-opacity="0.16" />
+      <stop offset="1" stop-color="#0a2540" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="520" fill="url(#bg)" />
+  <rect width="1600" height="520" fill="url(#glow)" />
+  <g fill="none" stroke="#b8fff1" stroke-opacity="0.26" stroke-width="2">
+    <path d="M90 390C258 252 366 260 526 330S844 430 1070 260 1420 134 1528 190" />
+    <path d="M72 292C254 144 442 120 626 214S922 392 1134 280 1386 174 1532 92" />
+    <path d="M126 438C330 374 492 374 632 418S982 476 1204 352 1426 306 1540 318" />
+  </g>
+  <g fill="#ffffff" fill-opacity="0.55">
+    <circle cx="224" cy="284" r="6" />
+    <circle cx="376" cy="222" r="8" />
+    <circle cx="536" cy="330" r="7" />
+    <circle cx="742" cy="386" r="5" />
+    <circle cx="948" cy="344" r="7" />
+    <circle cx="1138" cy="276" r="8" />
+    <circle cx="1324" cy="194" r="6" />
+    <circle cx="1470" cy="114" r="7" />
+  </g>
+  <g fill="#ffffff" fill-opacity="0.08">
+    <circle cx="1280" cy="244" r="148" />
+    <circle cx="1458" cy="368" r="92" />
+    <circle cx="1046" cy="116" r="74" />
+  </g>
+  <path d="M0 456C228 404 378 428 584 474S1032 528 1600 426V520H0Z" fill="#02121f" fill-opacity="0.24" />
+</svg>
