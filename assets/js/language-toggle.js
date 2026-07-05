@@ -92,7 +92,7 @@
     if (cleanPath.endsWith("/group/")) return "group";
     if (cleanPath.endsWith("/incoming-students/")) return "incomingStudents";
     if (cleanPath.endsWith("/cv/")) return "cv";
-    if (cleanPath === "/" || cleanPath.endsWith("/lab/")) return "about";
+    if (cleanPath === "/" || cleanPath.endsWith("/Lab/") || cleanPath.endsWith("/lab/")) return "about";
     return null;
   }
 
