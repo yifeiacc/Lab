@@ -5,7 +5,7 @@
   const languages = ["en", "zh"];
   const copy = {
     en: {
-      aboutSubtitle: "Professor, Department of Computer Science, Northwestern Polytechnical University",
+      aboutSubtitle: "Professor, School of Computer Science, Northwestern Polytechnical University",
       current: "(current)",
       nav: {
         about: "About",
