@@ -1,14 +1,14 @@
-name: DIKD Lab
-tagline: Where data becomes knowledge, and intelligence drives discovery
+name: DISC Lab
+tagline: Where data becomes knowledge, and intelligence drives scientific discovery
 description: >
-  The **Data Intelligence and Knowledge Discovery Lab (DIKD Lab)** is advancing 
-  the frontier of data intelligence and knowledge discovery to 
+  The **Data Intelligence and Scientific Discovery Lab (DISC Lab)** is advancing
+  the frontier of data intelligence and scientific discovery to
   transform complex data into trustworthy insights, intelligent systems, 
   and scientific breakthroughs.
 
 banner:
   image: assets/img/group/group-banner.svg
-  alt: DIKD Lab banner
+  alt: DISC Lab banner
 
 logos:
   - name: Northwestern Polytechnical University
@@ -16,10 +16,10 @@ logos:
     image: assets/img/group/nwpu-logo.png
     alt: Northwestern Polytechnical University logo
     variant: seal
-  - name: DIKD Lab
-    label: DIKD Lab
-    image: assets/img/group/dikd-lab-logo.png
-    alt: DIKD Lab logo
+  - name: DISC Lab
+    label: DISC Lab
+    image: assets/img/group/disc-lab-logo.png
+    alt: DISC Lab logo
     variant: wide
 
 news:

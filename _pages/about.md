@@ -56,12 +56,12 @@ latest_posts:
   >I lead the</span>
   <a
     href="{{ "/group/" | relative_url }}"
-    data-i18n-en="DIKD Lab"
-    data-i18n-zh="数据智能与知识发现实验室"
-  >DIKD Lab</a><span
-    data-i18n-en=", the Data Intelligence and Knowledge Discovery Lab (DIKD Lab) advances the frontier of data intelligence and knowledge discovery, transforming complex data into trustworthy insights, intelligent systems, and scientific breakthroughs."
-    data-i18n-zh="（DIKD Lab），致力于推进数据智能与知识发现的前沿发展，将复杂数据转化为可信洞察、智能系统和突破性科学发现。"
-  >, the Data Intelligence and Knowledge Discovery Lab (DIKD Lab) advances the frontier of data intelligence and knowledge discovery, transforming complex data into trustworthy insights, intelligent systems, and scientific breakthroughs.</span>
+    data-i18n-en="DISC Lab"
+    data-i18n-zh="数据智能与科学发现实验室"
+  >DISC Lab</a><span
+    data-i18n-en=", the Data Intelligence and Scientific Discovery Lab (DISC Lab) advances the frontier of data intelligence and scientific discovery, transforming complex data into trustworthy insights, intelligent systems, and scientific breakthroughs."
+    data-i18n-zh="（DISC Lab），致力于推进数据智能与科学发现的前沿发展，将复杂数据转化为可信洞察、智能系统和突破性科学发现。"
+  >, the Data Intelligence and Scientific Discovery Lab (DISC Lab) advances the frontier of data intelligence and scientific discovery, transforming complex data into trustworthy insights, intelligent systems, and scientific breakthroughs.</span>
 </p>
 
 {% assign group_news = site.data.group.news %}
