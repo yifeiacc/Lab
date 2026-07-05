@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Professor, Department of Computer Science, Northwestern Polytechnical University
+subtitle: Professor, School of Computer Science, Northwestern Polytechnical University
 
 profile:
   align: right
@@ -28,10 +28,10 @@ latest_posts:
 ---
 
 <p
-  data-i18n-en="I am a Professor in the Department of Computer Science at Northwestern Polytechnical University. My research focuses on trustworthy machine learning, federated learning, representation learning, large language models, and robust vision-language models."
+  data-i18n-en="I am a Professor in the School of Computer Science at Northwestern Polytechnical University. My research focuses on trustworthy machine learning, federated learning, representation learning, large language models, and robust vision-language models."
   data-i18n-zh="我是西北工业大学计算机学院教授，国家级青年人才，研究方向包括可信机器学习、联邦学习、表示学习、大语言模型以及鲁棒视觉语言模型。"
 >
-  I am a Professor in the Department of Computer Science at Northwestern Polytechnical University. My research focuses on trustworthy machine learning, federated learning, graph representation learning, large language models, and robust vision-language models.
+  I am a Professor in the School of Computer Science at Northwestern Polytechnical University. My research focuses on trustworthy machine learning, federated learning, graph representation learning, large language models, and robust vision-language models.
 </p>
 
 <p
