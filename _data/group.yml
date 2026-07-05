@@ -1,0 +1,147 @@
+name: DIKD Lab
+tagline: Where data becomes knowledge, and intelligence drives discovery
+description: >
+  The **Data Intelligence and Knowledge Discovery Lab (DIKD Lab)** is advancing 
+  the frontier of data intelligence and knowledge discovery to 
+  transform complex data into trustworthy insights, intelligent systems, 
+  and scientific breakthroughs.
+
+banner:
+  image: assets/img/group/group-banner.svg
+  alt: DIKD Lab banner
+
+logos:
+  - name: Northwestern Polytechnical University
+    label: School Logo
+    image: assets/img/group/nwpu-logo.png
+    alt: Northwestern Polytechnical University logo
+    variant: seal
+  - name: DIKD Lab
+    label: DIKD Lab
+    image: assets/img/group/dikd-lab-logo.png
+    alt: DIKD Lab logo
+    variant: wide
+
+news:
+  - date: "2026"
+    title: TRACE appears at WWW 2026.
+    title_zh: TRACE 论文发表于 WWW 2026。
+    description: Trajectory-aware evaluation for deep research agents.
+    description_zh: 面向深度研究智能体的轨迹感知综合评测。
+  - date: "2026"
+    title: Hierarchically Robust Zero-shot Vision-Language Models appears at CVPR 2026.
+    title_zh: 分层鲁棒零样本视觉语言模型论文发表于 CVPR 2026。
+    description: Robust zero-shot vision-language modeling.
+    description_zh: 面向鲁棒零样本视觉语言建模。
+  - date: "2026"
+    title: Geometric Collapse appears at ICML 2026.
+    title_zh: Geometric Collapse 论文发表于 ICML 2026。
+    description: Studying when vision models fail to verify physical causality.
+    description_zh: 研究视觉模型何时无法验证物理因果关系。
+  - date: "2025"
+    title: CrossSpectra appears at NeurIPS 2025.
+    title_zh: CrossSpectra 论文发表于 NeurIPS 2025。
+    description: Cross-layer smoothness for parameter-efficient fine-tuning.
+    description_zh: 利用跨层平滑性进行参数高效微调。
+
+gallery:
+  title: Group Activities
+  title_zh: 团队活动
+  description: Snapshots from group seminars, student discussions, and academic events.
+  description_zh: 展示组会、学生讨论与学术活动的照片。
+  items:
+    - title: Weekly Seminar
+      title_zh: 每周组会
+      caption: Research talks, reading groups, and project updates.
+      caption_zh: 研究汇报、论文分享与项目进展讨论。
+      image: assets/img/group/activity-seminar.svg
+      alt: Group weekly seminar placeholder
+    - title: Research Discussion
+      title_zh: 科研讨论
+      caption: Small-group brainstorming around trustworthy machine learning problems.
+      caption_zh: 围绕可信机器学习问题开展小组头脑风暴。
+      image: assets/img/group/activity-discussion.svg
+      alt: Group research discussion placeholder
+    - title: Academic Events
+      title_zh: 学术活动
+      caption: Conferences, workshops, and invited academic exchanges.
+      caption_zh: 会议、研讨会与邀请交流活动。
+      image: assets/img/group/activity-events.svg
+      alt: Group academic event placeholder
+    - title: Student Life
+      title_zh: 学生日常
+      caption: Shared moments from group gatherings and student activities.
+      caption_zh: 记录团队聚会与学生交流活动中的共同瞬间。
+      image: assets/img/group/activity-student-life.svg
+      alt: Group student life placeholder
+
+principal_investigator:
+  name: Yifei Zhang
+  role: Principal Investigator
+  image: assets/img/group/yifei-zhang.jpg
+  affiliation: Department of Computer Science, Northwestern Polytechnical University
+  email: yifei.zhang@nwpu.edu.cn
+  website: https://teacher.nwpu.edu.cn/yfzhang.html
+  interests:
+    - Trustworthy Machine Learning
+    - Self-Supervised Learning
+    - Federated Learning
+    - Agentic Learning
+    - Large Language Models
+    - Vision-Language Models
+
+student_groups:
+  - title: PhD Students
+    members:
+      - name: Ruotong Zhao
+        role: PhD Student
+        image: assets/img/group/ruotong-zhao.jpg
+        affiliation: Northwestern Polytechnical University
+
+  - title: Master Students
+    members:
+      - name: Yuting Cui
+        role: Master's Student
+        image: assets/img/group/yuting-cui.jpg
+        affiliation: Northwestern Polytechnical University
+      - name: Qiming Liu
+        role: Master's Student
+        image: assets/img/group/qiming-liu.png
+        affiliation: Northwestern Polytechnical University
+
+active_collaborators:
+  - name: Irwin King
+    image: assets/img/group/irwin-king.jpg
+    position: Pro-Vice-Chancellor (Education); Professor
+    affiliation: The Chinese University of Hong Kong
+    website: https://scholar.google.com/citations?user=MXvC7tkAAAAJ&hl=en
+
+  - name: Hao Zhu
+    image: assets/img/group/hao-zhu.jpg
+    position: Research Fellow
+    affiliation: Data61 @ CSIRO
+    website: https://scholar.google.com/citations?user=cpee-44AAAAJ&hl=en
+
+  - name: Piotr Koniusz
+    image: assets/img/group/piotr-koniusz.jpg
+    position: Associate Professor; Visiting Principal Research Scientist
+    affiliation: University of New South Wales; Data61 @ CSIRO; Australian National University
+    website: https://www.koniusz.com/
+
+  - name: Menglin Yang
+    image: assets/img/group/menglin-yang.png
+    position: Assistant Professor
+    affiliation: The Hong Kong University of Science and Technology (Guangzhou)
+    website: https://yangmenglinsite.github.io/
+
+  - name: Han Yu
+    image: assets/img/group/han-yu.png
+    position: Associate Professor
+    affiliation: College of Computing and Data Science, Nanyang Technological University
+    website: https://sites.google.com/site/hanyushomepage/home
+
+  - name: Zenglin Xu
+    image: assets/img/group/zenglin-xu.png
+    position: Professor
+    affiliation: Artificial Intelligence Innovation and Incubation Institute, Fudan University
+    website: https://faculty.fudan.edu.cn/xuzenglin/en/index.htm

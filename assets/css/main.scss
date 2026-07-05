@@ -1,0 +1,430 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@use "sass:math";
+@use "sass:string";
+
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default:  "930px" }}
+);
+
+@use "themes";
+@use "layout";
+
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/*******************************************************************************
+ * Local site color tuning
+ ******************************************************************************/
+
+:root {
+  --global-theme-color: #0076df;
+  --global-hover-color: #005fb8;
+  --global-highlight-color: #00369f;
+  --global-code-bg-color: rgba(0, 118, 223, 0.06);
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #4db8ff;
+  --global-hover-color: #7ccaff;
+  --global-highlight-color: #7ccaff;
+}
+
+.language-toggle-container {
+  align-items: center;
+  display: inline-flex;
+}
+
+#language-toggle {
+  align-items: center;
+  background-color: inherit;
+  border: 0;
+  color: var(--global-text-color);
+  cursor: pointer;
+  display: inline-flex;
+  height: 2rem;
+  justify-content: center;
+  padding: 0;
+  width: 2rem;
+
+  &:hover {
+    color: var(--global-hover-color);
+  }
+}
+
+.language-toggle-label {
+  align-items: center;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 0.72rem;
+  font-weight: 700;
+  height: 1.55rem;
+  justify-content: center;
+  letter-spacing: 0;
+  min-width: 1.55rem;
+  padding: 0 0.28rem;
+}
+
+html[data-language="zh"] {
+  .post article,
+  .post-description,
+  .post .desc {
+    letter-spacing: 0;
+  }
+}
+
+/*******************************************************************************
+ * Local site typography tuning
+ ******************************************************************************/
+
+.post-header {
+  margin-bottom: 1rem;
+}
+
+.post-title {
+  font-size: 2rem;
+  line-height: 1.15;
+  margin-bottom: 0.35rem;
+}
+
+.post-description,
+.post .desc {
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.post article {
+  font-size: 0.9rem;
+  line-height: 1.45;
+
+  > p,
+  > ul > li,
+  .clearfix > p,
+  .clearfix > ul > li {
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+
+  > p,
+  .clearfix > p {
+    margin-bottom: 0.75rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    margin-bottom: 0.45rem;
+    margin-top: 1.15rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    line-height: 1.25;
+    margin-bottom: 0.45rem;
+    margin-top: 1rem;
+  }
+
+  h4 {
+    font-size: 0.92rem;
+    line-height: 1.25;
+  }
+}
+
+.profile .more-info p {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 576px) {
+  .post .profile {
+    max-width: 220px;
+    width: 24%;
+  }
+}
+
+@media (max-width: 575px) {
+  .post .profile.float-left,
+  .post .profile.float-right {
+    float: none;
+    margin: 0 auto 1rem;
+    max-width: 210px;
+    width: 100%;
+  }
+}
+
+.publications {
+  margin-top: 1rem;
+
+  h1 {
+    font-size: 1.25rem;
+    margin: 0.8rem 0;
+  }
+
+  h2 {
+    margin-bottom: 0.65rem;
+
+    span {
+      font-size: 1rem;
+    }
+  }
+
+  h2.bibliography {
+    font-size: 1.05rem;
+    margin-top: 1.25rem;
+    padding-top: 0.65rem;
+  }
+
+  ol.bibliography {
+    li {
+      margin-bottom: 0.75rem;
+
+      .abbr {
+        margin-bottom: 0.25rem;
+
+        abbr {
+          font-size: 0.68rem;
+          margin-bottom: 0.25rem;
+          padding: 0.18rem 0.25rem;
+        }
+      }
+
+      .title {
+        font-size: 0.88rem;
+        line-height: 1.25;
+      }
+
+      .author,
+      .periodical {
+        font-size: 0.78rem;
+        line-height: 1.35;
+      }
+
+      .links {
+        a.btn {
+          font-size: 0.68rem;
+          padding: 0.14rem 0.55rem;
+        }
+      }
+    }
+  }
+}
+
+.social {
+  margin-top: 1rem;
+
+  .contact-icons {
+    font-size: 2.6rem;
+  }
+
+  .contact-note {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+}
+
+.group-news {
+  border-top: 1px solid var(--global-divider-color);
+  clear: both;
+  margin-top: 1rem;
+  padding-top: 0.85rem;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: grid;
+    gap: 0.7rem;
+    grid-template-columns: 4.2rem minmax(0, 1fr);
+    margin-bottom: 0.55rem;
+  }
+
+  .group-news-date {
+    color: var(--global-theme-color);
+    font-size: 0.76rem;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  .group-news-description {
+    color: var(--global-text-color-light);
+    display: block;
+    font-size: 0.78rem;
+    line-height: 1.35;
+    margin-top: 0.1rem;
+  }
+}
+
+.group-gallery {
+  clear: both;
+  margin-top: 1.1rem;
+  padding-bottom: 0.2rem;
+
+  h2 {
+    margin-bottom: 0.25rem;
+    margin-top: 0;
+  }
+
+  p {
+    color: var(--global-text-color-light);
+    font-size: 0.82rem;
+    line-height: 1.4;
+    margin-bottom: 0.65rem;
+  }
+}
+
+.group-gallery-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.group-gallery-strip {
+  display: grid;
+  gap: 0.85rem;
+  grid-auto-columns: minmax(240px, 72%);
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding: 0.1rem 0 0.65rem;
+  scroll-padding-inline: 0.05rem;
+  scroll-snap-type: inline mandatory;
+  scrollbar-color: var(--global-divider-color) transparent;
+
+  &:focus-visible {
+    outline: 2px solid var(--global-theme-color);
+    outline-offset: 3px;
+  }
+}
+
+.group-gallery-card {
+  background: var(--global-bg-color, #ffffff);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+  margin: 0;
+  overflow: hidden;
+  scroll-snap-align: start;
+
+  img {
+    aspect-ratio: 16 / 9;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  figcaption {
+    display: grid;
+    gap: 0.2rem;
+    padding: 0.65rem 0.75rem 0.75rem;
+  }
+
+  strong {
+    font-size: 0.88rem;
+    line-height: 1.25;
+  }
+
+  span {
+    color: var(--global-text-color-light);
+    font-size: 0.74rem;
+    line-height: 1.35;
+  }
+}
+
+@media (min-width: 768px) {
+  .group-gallery-strip {
+    grid-auto-columns: minmax(280px, 42%);
+  }
+}
+
+@media (max-width: 575px) {
+  .group-gallery-strip {
+    grid-auto-columns: minmax(225px, 88%);
+  }
+}
+
+.cv {
+  font-size: 0.86rem;
+  margin-bottom: 1.5rem;
+
+  .card {
+    margin-bottom: 0.85rem;
+
+    .card-body {
+      padding: 0.75rem 0.9rem;
+    }
+  }
+
+  .card-title {
+    font-size: 1.05rem;
+    line-height: 1.25;
+    margin-bottom: 0.45rem;
+  }
+
+  .list-group-item {
+    font-size: 0.78rem;
+    line-height: 1.35;
+    padding: 0.45rem 0.75rem;
+  }
+
+  table.table-cv {
+    td,
+    th {
+      font-size: 0.78rem !important;
+      line-height: 1.35 !important;
+    }
+  }
+
+  td.department,
+  td.list-group-name,
+  td.list-group-level {
+    font-size: 0.78rem !important;
+  }
+
+  a.btncv,
+  p.list-group-time,
+  p.location,
+  td.list-group-school {
+    font-size: 0.68rem !important;
+  }
+
+  div.container-links {
+    margin-bottom: 0.35rem;
+    margin-top: 0.6rem;
+  }
+
+  ul.timeline {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+    li {
+      font-size: 0.8rem;
+      min-height: 1.8rem;
+    }
+  }
+}
+
+.toc-sidebar {
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
